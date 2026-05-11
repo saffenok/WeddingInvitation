@@ -1,0 +1,470 @@
+/* basic */
+:root {
+    --color-back: #FCFCFC;
+    --color-main-text: #353131;
+    --color-contrast-text: #F0EFEF;
+    --color-input-dark: #B5B0B0;
+    --color-input-light: #D2D0D0;
+    --color-questions-text: #242731;
+    --color-nums-text: #78814B;
+    --color-head-text: #4F4A4A;
+    --color-back-wine: #6F2A3C;
+    --color-questions-descr: #696363;
+    --color-input-placeholder: #9C9696;
+    --color-questions-star: #B94665;
+    --color-anketa-descr: #837C7C;
+    --color-contrast-date: #F0EFEF80;
+}
+
+@media (min-width: 750px) {
+    :root {
+        --font-size: 18px;
+    }
+
+    .container {
+        padding-left: calc((100% - 625px) / 2);
+        padding-right: calc((100% - 625px) / 2);
+    }
+
+    .title {
+        margin-bottom: 31px;
+        font-size: 26px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .header__head {
+        font-size: 71px;
+    }
+
+    .header__text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text__date {
+        display: block;
+    }
+
+    .invitation__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 30px 0;
+    }
+
+    .invitation__date {
+        position: static;
+    }
+
+    .invitation__poetry {
+        line-height: 125%;
+    }
+
+    .invitation__date {
+        font-size: 52px;
+    }
+
+    .timeline {
+        background-position: 1px 12px;
+    }
+
+    .timeline__item {
+        margin-bottom: 12px;
+    }
+
+    .location__wrapper {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .location__decor {
+        position: relative;
+        top: -35px;
+        left: 220px;
+    }
+
+    .location__text {
+        margin-bottom: 70px;
+    }
+
+    .location__link {
+        padding-left: 12px;
+    }
+
+    .dresscode {
+        margin-bottom: 94px;
+    }
+
+    .dresscode__container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .dresscode__colors {
+        margin-bottom: 0;
+    }
+
+    .colors__list_row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .dresscode__info {
+        flex-basis: 48%;
+    }
+
+    .dresscode__head {
+        text-align: left;
+    }
+
+    .dresscode__text {
+        text-align: left;
+    }
+
+    .dresscode__btn {
+        margin-top: 35px;
+        align-items: flex-start;
+    }
+
+    .dresscode__link {
+        padding-left: 15px;
+    }
+
+    .details {
+        margin-bottom: 199px;
+    }
+
+    .details__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .details__list {
+        max-width: 500px;
+    }
+
+    .questionnaire {
+        margin-right: calc((100vw - 697px) / 2);
+        margin-left: calc((100vw - 697px) / 2);
+    }
+
+    .questionnaire__container {
+        padding: 58px 60px 20px 90px;
+    }
+
+    .questionnaire__head {
+        margin-bottom: 6px;
+    }
+
+    .questionnaire__descr {
+        font-size: 20px;
+    }
+
+    .question__text {
+        font-size: 20px;
+    }
+
+    .question__option {
+        font-size: 16px;
+    }
+
+    .question__descr {
+        font-size: 14px;
+    }
+
+    .question__wrapper {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .questionnaire__container_success, .questionnaire__container_error {
+        padding: 140px 80px 140px 100px;
+    }
+}
+
+@media (min-width: 1023px) {
+    :root {
+        --font-size: 24px;
+    }
+
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .btn {
+        font-size: var(--font-size);
+    }
+
+    .header__container {
+        padding-left: calc((100% - 625px) / 2);
+        padding-right: calc((100% - 625px) / 2);
+    }
+
+    .header__decor {
+        width: 289px;
+        height: 193px;
+        background-image: url('../img/header_Decor\ Background_desktop.png');
+    }
+
+    .text__poetry {
+        font-size: 20px;
+    }
+
+    .timeline {
+        padding: 0;
+        background-image: none;
+    }
+
+    .timeline__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .timeline__time {
+        margin-bottom: 8px;
+    }
+
+    .timeline__time.timeline__time_withVector {
+        margin-bottom: 3px;
+    }
+
+    .timeline__time_withVector {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline__vector {
+        display: block;
+    }
+
+    .location__decor {
+        left: 270px;
+    }
+
+    .location__btn_vector_mobile {
+        display: none;
+    }
+
+    .location__btn_vector_desktop {
+        display: block;
+    }
+
+    .location__link {
+        padding-left: 23px;
+    }
+
+    .location__btn_vector {
+        top: -19px;
+    }
+
+    .colors__descr {
+        font-size: 20px;
+    }
+
+    .dresscode__btn_vector_mobile {
+        display: none;
+    }
+
+    .dresscode__btn_vector_desktop {
+        display: block;
+    }
+
+    .dresscode__btn_vector {
+        top: -42px;
+    }
+
+    .details__vector_mobile {
+        display: none;
+    }
+
+    .details__vector_desktop {
+        display: block;
+    }
+
+    .questionnaire__container {
+        padding: 58px 90px 30px 90px;
+    }
+
+    .form__btn_vector_mobile {
+        display: none;
+    }
+
+    .form__btn_vector_desktop {
+        display: block;
+    }
+
+    .form__btn_vector {
+        top: -55px;
+    }
+
+    .questionnaire__container_success, .questionnaire__container_error {
+        padding: 160px 90px 160px 110px;
+    }
+}
+
+@media (min-width: 1439px) {
+    .container {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .title {
+        margin-bottom: 41px;
+    }
+
+    .header {
+        padding: 142px 0 97px 0;
+    }
+
+    .header__container {
+        padding-left: calc((100% - 625px) / 2);
+        padding-right: calc((100% - 625px) / 2);
+    }
+
+    .header__decor {
+        right: 100px;
+    }
+
+    .header__head {
+        margin-bottom: 22px;
+    }
+
+    .invitation__wrapper {
+        padding: 96px 0;
+        align-items: flex-start;
+    }
+
+    .invitation__poetry {
+        margin-bottom: 24px;
+    }
+
+    .invitation__date {
+        font-size: 72px;
+    }
+
+    .program__head {
+        margin-bottom: 63px;
+    }
+
+    .timeline__time {
+        margin-bottom: 12px;
+    }
+
+    .timeline__time.timeline__time_withVector {
+        margin-bottom: 7px;
+    }
+
+    .location {
+        margin-bottom: 190px;
+    }
+
+    .location__text {
+        margin-bottom: 200px;
+    }
+
+    .dresscode__info {
+        flex-basis: 44%;
+    }
+
+    .dresscode__link {
+        padding-left: 22px;
+    }
+
+    .colors__img {
+        width: 87px;
+    }
+
+    .colors__img.large {
+        width: 434px;
+    }
+
+    .questionnaire {
+        margin-bottom: 58px;
+    }
+
+    .questionnaire__decor {
+        display: block;
+    }
+
+    .questionnaire__head {
+        margin-bottom: 6px;
+    }
+
+    .footer__text {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1919px) {
+    .container {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .header__container {
+        padding-left: calc((100% - 625px) / 2);
+        padding-right: calc((100% - 625px) / 2);
+    }
+
+    .dresscode {
+        margin-bottom: 132px;
+    }
+
+    .colors__list {
+        gap: 43px;
+    }
+
+    .colors__descr {
+        font-size: 24px;
+    }
+
+    .dresscode__text:not(:last-child) {
+        margin-bottom: 52px;
+    }
+
+    .dresscode__text.dresscode__text_gap {
+        margin-bottom: 16px;
+    }
+
+    .details__list {
+        gap: 50px;
+    }
+
+    .questionnaire__container {
+        padding: 100px 100px 30px 140px;
+    }
+
+    .questionnaire__decor_1 {
+        top: 20%;
+        left: 15%;
+    }
+
+    .questionnaire__decor_2 {
+        top: 55%;
+        right: 15%;
+    }
+
+    .questionnaire__container_success, .questionnaire__container_error {
+        padding: 200px 100px 200px 120px;
+    }
+
+    .success__head, .error__head {
+        font-size: 36px;
+    }
+}
