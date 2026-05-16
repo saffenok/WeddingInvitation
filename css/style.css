@@ -191,6 +191,8 @@ img {
 .invitation {
     position: relative;
     padding: 45px 0 45px 0;
+    outline: none;
+    border: none;
 }
 
 .invitation__back_up {
