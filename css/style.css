@@ -201,6 +201,8 @@ img {
     height: 47px;
     background-image: url('../img/invitation_Vector_up.png');
     z-index: -1;
+    outline: none;
+    border: none;
 }
 
 .invitation__back {
@@ -221,6 +223,8 @@ img {
     height: 47px;
     background-image: url('../img/invitation_Vector_down.png');
     z-index: -1;
+    outline: none;
+    border: none;
 }
 
 .invitation__poetry {
